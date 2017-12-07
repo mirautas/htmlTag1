@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS basic2 axercises</title>
+
+</head>
+<body>
+	<style> *{font-family: calibri</style>
+	}
+
+	 <p id='message'></p>
+
+<script>
+
+
+function crystalGazer(number, partner, location, job)
+		{
+	document.write("You are a " +job+ ", you live in " +location+ ", your partner's name is " +partner+ ", and you have " +number+ " children. ");
+
+	}
+
+	document.write ("<h3> JavaScript: Day 2. - ClassWork </h3>" + "<br>");
+	document.write ("<h4> Basic </h4>" + "<br>");
+
+	crystalGazer(2, "Veronika", "Cannes", "WebDeveloper");
+
+										document.write("<br>")
+
+	crystalGazer(3, "Nils", "Berlin", "Interior Designer");
+
+
+										document.write("<hr>");
+
+
+function ageCalculator(birthYear1, birthYear2, currentYear)
+		{
+
+	document.write("You are either " +(currentYear-birthYear1)+
+		" or "+ (currentYear-birthYear2));
+	}
+
+	ageCalculator(1954, 1955, 2017); 
+	document.write("<br>")
+	ageCalculator(2004, 2005, 2017);
+
+
+										document.write("<hr>");
+
+function ageCalculator(birthYear1, birthYear2)
+		{
+			var d = new Date()
+			var n = d.getFullYear()
+
+	document.write("You are either " +(n-birthYear1)+
+		" or "+ (n-birthYear2));
+	}
+
+	ageCalculator(2004, 2005); 
+									
+										document.write("<hr>");
+
+
+function degrees_to_radians(degrees)
+		{
+  	var pi = Math.PI;
+  	var radian = degrees*(pi/180);
+  	return radian;
+	}
+
+	document.write(degrees_to_radians(90));
+
+
+										document.write("<hr>");
+
+
+function box(width, height, depth) 
+		{
+	var Area = width*height;
+	var Volume = width*height*depth;
+	var Result =[Area,Volume];
+	return Result;
+
+	}
+
+	document.write("The Area of the box is: " +box(2,3,4)[0]+"<br>");
+	
+
+	document.write("The volume of the box is: " +box(2,3,4)[1]);
+
+										document.write("<hr>");
+// This is in the first.html file
+/*
+alert("Welcome guest!");
+
+var person = prompt("Please enter your name", "Harry Potter");
+
+    document.getElementById("message").innerHTML =
+
+        "Hello " + person + "! How are you today?";
+        */
+
+	document.write ("<h4> Intermadiate </h4>");
+
+function grade(n1, n2, n3) 
+		{
+	document.write("Sum: " + (n1+n2+n3)+"<br>");
+	document.write("Average: " + (n1+n2+n3)/3);
+}
+
+		grade(3,1,1);
+
+</script>
+
+</body>
+</html>

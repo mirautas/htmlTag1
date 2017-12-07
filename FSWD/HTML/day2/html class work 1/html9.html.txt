@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+
+  <title>Span example</title>
+</head>
+
+<body>
+  <h1>SPAN vs. DIV</h1>
+    <p>
+      <span>First span</span>
+      <span>Second Span</span>
+    </p>
+    <p>
+  <div>First div</div>
+  <div>Second div</div>
+
+</p>
+
+</body>
+
+</html>
